@@ -1,6 +1,6 @@
 {
   "name": "@nestjs/apollo",
-  "version": "11.1.15",
+  "version": "11.1.16",
   "description": "Nest - modern, fast, powerful node.js web framework (@apollo)",
   "author": "Kamil Mysliwiec",
   "license": "MIT",
@@ -56,5 +56,5 @@
       "optional": true
     }
   },
-  "gitHead": "4a83f84620e5c02a0129f16404214e8f9d096d39"
+  "gitHead": "cd398337d14346b95addc565b2f1e32f904dc26b"
 }
