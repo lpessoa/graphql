@@ -52,7 +52,6 @@ export abstract class ApolloBaseDriver<
     } else {
       throw new Error(`No support for current HttpAdapter: ${platformName}`);
     }
-    console.log('sd');
   }
 
   public stop() {
@@ -175,7 +174,14 @@ export abstract class ApolloBaseDriver<
 
     await server.start();
 
-    await app.register(fastifyApollo(server));
+    app.route({
+      url: path,
+      method: ['POST', 'OPTIONS'],
+      handler: fastifyApolloHandler(server),
+    });
+
+    //await app.register(fastifyApollo(server));
+    await app.register(cors, options.cors);
 
     this.apolloServer = server;
   }
