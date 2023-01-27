@@ -69,5 +69,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nestjs/graphql"
-  }
+  },
+  "gitHead": "d9056b18a3740fe38ff82403b240d66c0ee932a1"
 }

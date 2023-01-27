@@ -55,5 +55,6 @@
     "@apollo/gateway": {
       "optional": true
     }
-  }
+  },
+  "gitHead": "d9056b18a3740fe38ff82403b240d66c0ee932a1"
 }
