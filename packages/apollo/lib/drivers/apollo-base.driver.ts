@@ -52,6 +52,7 @@ export abstract class ApolloBaseDriver<
     } else {
       throw new Error(`No support for current HttpAdapter: ${platformName}`);
     }
+    console.log('sd');
   }
 
   public stop() {
