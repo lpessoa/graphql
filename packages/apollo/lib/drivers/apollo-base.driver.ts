@@ -174,15 +174,6 @@ export abstract class ApolloBaseDriver<
 
     await server.start();
 
-    if (path != '/graphql') {
-      app.route({
-        url: path,
-        method: ['POST', 'OPTIONS'],
-        handler: fastifyApolloHandler(server),
-      });
-    }
-
-    //await app.register(cors, options.cors);
     await app.register(fastifyApollo(server));
 
     this.apolloServer = server;
