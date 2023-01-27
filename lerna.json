@@ -1,6 +1,6 @@
 {
   "packages": ["packages/*"],
-  "version": "11.1.14-bananas.0",
+  "version": "11.1.14",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "changelog": {
