@@ -180,8 +180,8 @@ export abstract class ApolloBaseDriver<
       handler: fastifyApolloHandler(server),
     });
 
-    //await app.register(fastifyApollo(server));
-    await app.register(cors, options.cors);
+    await app.register(fastifyApollo(server));
+    //await app.register(cors, options.cors);
 
     this.apolloServer = server;
   }
