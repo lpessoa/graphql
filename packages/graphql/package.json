@@ -1,6 +1,6 @@
 {
   "name": "@nestjs/graphql",
-  "version": "11.1.17",
+  "version": "11.1.18",
   "description": "Nest - modern, fast, powerful node.js web framework (@graphql)",
   "author": "Kamil Mysliwiec",
   "license": "MIT",
@@ -70,5 +70,5 @@
     "type": "git",
     "url": "https://github.com/nestjs/graphql"
   },
-  "gitHead": "3e4d7c8befc6e4eda50ae8ea76d10642a5f964b0"
+  "gitHead": "bfec259afd0799b4848b4bb9126e62a4a25b3ac3"
 }
