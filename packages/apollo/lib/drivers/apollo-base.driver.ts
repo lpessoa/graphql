@@ -177,14 +177,14 @@ export abstract class ApolloBaseDriver<
 
     await server.start();
 
-    app.route({
-      url: path,
-      method: ['POST', 'OPTIONS'],
-      handler: fastifyApolloHandler(server),
-    });
+    // app.route({
+    //   url: path,
+    //   method: ['POST', 'OPTIONS'],
+    //   handler: fastifyApolloHandler(server),
+    // });
 
     await app.register(fastifyApollo(server));
-    await app.register(cors, options.cors);
+    //await app.register(cors, options.cors);
 
     this.apolloServer = server;
   }
