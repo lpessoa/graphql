@@ -172,7 +172,7 @@ export abstract class ApolloBaseDriver<
       resolvers,
       schema,
       ...options,
-      plugins: [fastifyApolloDrainPlugin(app)],
+      //plugins: [fastifyApolloDrainPlugin(app)],
     });
 
     await server.start();
