@@ -171,6 +171,7 @@ export abstract class ApolloBaseDriver<
       typeDefs,
       resolvers,
       schema,
+      ...options,
       plugins: [fastifyApolloDrainPlugin(app)],
     });
 
