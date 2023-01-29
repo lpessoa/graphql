@@ -172,20 +172,11 @@ export abstract class ApolloBaseDriver<
       resolvers,
       schema,
       ...options,
-      //plugins: [fastifyApolloDrainPlugin(app)],
+      plugins: [fastifyApolloDrainPlugin(app)],
     });
 
     await server.start();
-
-    // app.route({
-    //   url: path,
-    //   method: ['POST', 'OPTIONS'],
-    //   handler: fastifyApolloHandler(server),
-    // });
-
     await app.register(fastifyApollo(server));
-    //await app.register(cors, options.cors);
-
     this.apolloServer = server;
   }
 
