@@ -1,6 +1,6 @@
 {
   "name": "@nestjs/apollo",
-  "version": "10.2.0",
+  "version": "10.2.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@apollo)",
   "author": "Kamil Mysliwiec",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/nestjs/graphql.git"
   },
   "scripts": {
-    "test:e2e": "jest --config ./tests/jest-e2e.ts --runInBand && yarn test:e2e:fed2",
+    "test:e2e": "jest --config ./tests/jest-e2e.ts --runInBand",
     "test:e2e:fed2": "jest --config ./tests/jest-e2e-fed2.ts --runInBand",
     "test:e2e:dev": "jest --config ./tests/jest-e2e.ts --runInBand --watch"
   },
@@ -35,7 +35,8 @@
     "apollo-client": "2.6.10",
     "apollo-link-ws": "1.0.20",
     "apollo-server-plugin-response-cache": "3.8.1",
-    "graphql-16": "npm:graphql@16.6.0"
+    "graphql-16": "npm:graphql@16.6.0",
+    "jest-html-reporter": "^3.7.0"
   },
   "dependencies": {
     "@apollo/server": "^4.3.2",
